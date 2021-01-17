@@ -9,8 +9,8 @@ print(cur, "printing cur")
 def execute_query(cur):
     with open('queryList.json') as query_file:
             data = json.load(query_file)
-            for v in data.values():
-                data = get_data(cur, v)
+            for value in data.values():
+                data = get_data(cur, value)
                 print(data)
         
 execute_query(cur)
